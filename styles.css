@@ -1,0 +1,420 @@
+@font-face {
+    font-family: "housttely signature";
+    src: url(Housttely\ Signature.woff);
+}
+@font-face {
+    font-family: "montserrat";
+    src: url(Montserrat-Regular.woff);
+}
+* {
+    font-family: "montserrat";
+}
+body {
+    margin: 0;
+}
+.title {
+    padding-left: 0.5em;
+    padding-bottom: 0.2em;
+    font-family: "housttely signature";
+    font-size: 2em;
+    margin: 0;
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+}
+.header {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 2em;
+    position: fixed;
+    z-index: 1;
+    background-color:#19021a;
+    color: #ec8f00;
+    height: 5em;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+  }
+.header-wrap {
+    padding-top: 1em;
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    width: 5em;
+    height: 5em;
+}
+.spacing {
+    padding-top: 4em;
+}
+
+.spacing2 {
+    padding-top: 2em;
+}
+main {
+    padding-top: 7em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#reading-list {
+    background-color: #ec8f00;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1.2em;
+    height: 5em;
+    font-family: "montserrat";
+    font-size: 1.4em;
+    padding-left: 2em;
+}
+
+
+.user-data {
+    display: flex;
+    flex-direction: row;
+}
+.avatar {
+    width: 3.3em;
+    height: 3.3em;
+    border-radius: 100%;
+    margin: auto;
+}
+
+#name {
+    padding-left: 0.6em;
+    padding-right: 2em;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 2.6em;
+}
+#book-list {
+    background-color:#ddd ;
+    width: 83%;
+    height: 62vh;
+    border-radius: 1.2em;
+    display: block;
+    flex-direction: column;
+    overflow-y: scroll;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+#book-title {
+    width: 60%;
+    font-size: 1.6em;
+    color: #19021a
+}
+
+.book-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    height: 28em;
+    margin-bottom: 1em;
+    width: 98%;
+    border-radius: 1.2em;
+    position: relative;
+}
+
+button {
+    width: 15em;
+    height: 4em;
+    background-color: #ec8f00;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 1s;
+}
+button a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.15em;
+    font-size: 1.7em;
+
+}
+button:hover {
+    background-color: #19021a;
+}
+button a:active {
+    color: #ec8f00;
+}
+button a:hover {
+    font-size: 1.8em;
+    
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.book-image {
+    width: 35%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    left: -2em;
+}
+#author {
+    font-size: 1em;
+}
+
+#rating {
+   font-size: 0.8em; 
+}
+.description {
+    color: black;
+    width: 40%;
+    text-align: left;
+    padding-left: 20em;
+    margin: 0;
+}
+
+#synopsis {
+    color: #aaa;
+    font-size: 1em;
+    height: 7em;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 1em 0;
+    text-align: justify;
+}
+
+
+@media (max-width: 960px) {
+    .avatar {
+        width: 3em;
+        height: 3em;
+        margin: auto;
+    }
+    #reading-list {
+        width: 78%;
+        height: 3.8em
+    }
+    .spacing {
+        padding-top: 3em;
+    }
+    .spacing2 {
+        padding-top: 1.7em;
+    }
+    #book-list {
+        height: 60vh;
+    }
+    .book-wrap {
+        height: 25em;
+    }
+    button {
+        width: 12em;
+        height: 2.7em;
+    }
+
+    button a {
+        font-size: 1.1em;
+    }
+
+    button a:hover {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 850px) {
+    h1 {
+        font-size: 1.5em;
+    } 
+    .book-image {
+        width: 40%;
+    }
+    #reading-list {
+        height: 4em;
+        width: 77%;
+    }
+    h1 {
+        font-size: 1.1em;
+        margin-top: 1em;
+    } 
+    .avatar {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    #name {
+        font-size: 0.6em;
+    }
+    .book-image {
+        width: 40%;
+    }
+    .description {
+        padding-left: 10em;
+        width: 50%;
+    }
+
+}
+@media (max-width: 770px) {
+    .book-wrap {
+        height: 23em;
+    }
+    #book-title {
+        font-size: 1.3em;
+    }
+    #author {
+        font-size: 1em;
+    }
+    #rating {
+        font-size: 0.7em;
+    }
+    #synopsis {
+        font-size: 0.8em ;
+    }
+}
+
+@media (max-width: 610px) {
+    #reading-list {
+        height: 3em;
+        padding-left: 1em;
+        width: 80%;
+    }
+    h1 {
+        font-size: 0.9em;
+        margin-top: 1em;
+    } 
+    .avatar {
+        width: 2em;
+        height: 2em;
+    }
+    #name {
+        font-size: 0.6em;
+        margin-top: 2em;
+        padding-right: 0.6em;
+
+    }
+    .book-wrap {
+        height: 20em;
+    }
+    button {
+        width: 10em;
+        height: 2.5em;
+    }
+
+    button a {
+        font-size: 1em;
+    }
+
+    button a:hover {
+        font-size: 1.1em;
+    }
+    #synopsis {
+    }
+    #book-title {
+        font-size: 1em;
+    }
+    #author {
+        font-size: 0.8em;
+    }
+    #rating {
+        font-size: 0.6em;
+    }
+}
+@media (max-width: 490px) {
+    .book-image {
+        width: 50%;
+    }
+    #reading-list {
+        width: 78%;
+    }
+    #book-title {
+        font-size: 0.8em;
+    }
+    #synopsis {
+        font-size: 0.6em;
+    }
+    .book-wrap {
+        height: 16em;
+    }
+    h1 {
+        font-size: 0.8em;
+    }
+    .user-data {
+        display: block;
+        flex-direction: column;
+        margin-right: 0.8em;
+    }
+    #name {
+        padding: 0;
+        margin: 0;
+    }
+    .description {
+        padding-right: 1em;
+    }
+    button {
+        width: 6em;
+        height: 2em;
+    }
+    button a {
+        font-size: 0.7em;
+    }
+    button a:hover {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 361px) {
+    #reading-list {
+        font-size: 0.9em;
+    }
+    .book-wrap {
+        height: 14em;
+        overflow-x: scroll;
+    }
+    .description {
+        padding-left: 7em;
+    }
+    #book-title {
+        font-size: 0.7em;
+        font-weight: 800;
+    }
+    #author {
+        font-size: 0.5em;
+    }
+    #rating {
+        font-size: 0.4em;
+    }
+    #synopsis {
+        font-size: 0.4em;
+        font-weight: 800;
+    }
+}
+@media (min-width: 2200px) {
+    .header {
+        height: 8em;
+    }
+    .logo {
+      padding-top: 2em;
+    }
+    .title {
+        font-size: 3em;
+    }
+    .spacing {
+        padding-top: 9em;
+    }
+    #reading-list {
+        width: 82%;
+    }
+    #book-title {
+        font-size: 2.7em;
+        font-weight: 800;
+    }
+    #author {
+        font-size: 2em;
+    }
+    #rating {
+        font-size: 1em;
+    }
+    #synopsis {
+        font-size: 1.5em;
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+
+    }
+    .book-wrap{
+        height: 32em;
+    }
+}
